@@ -1,0 +1,101 @@
+ul {
+    margin: 0;
+    display: flex;
+    height: 350px;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    anchor-name: --my-carousel;
+    scroll-marker-group: after;
+}
+
+ul::scroll-marker-group {
+    position: absolute;
+    position-anchor: --my-carousel;
+    top: calc(anchor(bottom) - 30px);
+    justify-self: anchor-center;
+
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+
+li {
+    color: white;
+    background-color: black;
+    list-style-type: none;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+li::scroll-marker {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: rgb(206, 206, 206);  
+    border-radius: 50%;
+}
+li::scroll-marker:target-current {
+    border: 2px solid white;
+    box-sizing: border-box;
+    background-color: rgb(241, 0, 0);
+}
+
+li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-image {
+    flex: 2;
+    object-fit: scale-down;
+}
+
+.product-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    margin-left: 90px;
+}
+
+.product-name {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.product-name img {
+    object-fit: cover;
+    height: 40px;
+}
+
+.product-discount {
+    font-size: 3.4em;
+}
+
+.shop-now-container {
+    display: flex;
+    gap: 8px;
+    height: 24px;
+}
+
+.shop-now {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 8px;    
+}
+
+.shop-now-icon {
+    cursor: pointer;
+    align-self: flex-end;
+    color: white;
+    font-size: 1.3em;
+}
+
+.shop-now-icon:hover,
+.shop-now:hover {    
+    color: rgb(214, 214, 214);
+}

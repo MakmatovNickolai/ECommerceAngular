@@ -1,3 +1,14 @@
-<h1>Product List</h1>
+<app-top-message-bar></app-top-message-bar>
 
-<app-product-list></app-product-list>
+<div class="main">
+    <app-top-navigation></app-top-navigation>
+</div>
+
+<hr>
+
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
+
+<div class="top-spacing-large">
+    <app-bottom-navigation></app-bottom-navigation>
+</div>

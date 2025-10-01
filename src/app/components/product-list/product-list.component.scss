@@ -1,0 +1,149 @@
+$red: rgb(206, 0, 17);
+
+.grid-wrapper {
+    padding-left: 5px;
+    overflow-x: hidden;
+}
+.product-grid {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;    
+}
+
+.grid {
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-wrapper {
+    padding: 5px;  
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0 0 4px 2px rgb(196, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.discount-percent {
+    position: absolute;
+    color: white;
+    border-radius: 3px;
+    padding: 4px 12px;
+    background-color: $red;
+    left: 4%;
+    top: 4%;
+    font-size: 0.9em;
+}
+
+.product-button {
+    width: 22px;
+    height: 22px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-button:hover {
+    background-color: rgb(248, 248, 248);
+}
+
+.favorite {
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 3%;    
+}
+
+.eye {
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 18%;  
+}
+
+.add-cart {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 4px 2px rgb(196, 196, 196);
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .add-cart {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.product-card img {
+    padding: 45px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 285px;
+    height: 285px;
+    object-fit: scale-down;
+}
+
+.name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.prices {
+    display: flex;
+    font-weight: 500;
+    gap: 10px;
+}
+
+.current-price {
+    color: $red; 
+}
+
+.discount-price {
+    color: rgb(170, 170, 170);
+    text-decoration: line-through;
+}
+
+.rating-info {
+    display: flex;
+    align-items: center;
+}
+
+.rating-stars {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.checked {
+    color: orange;
+}
+
+span.fa-star:not(.checked) {
+    color: rgb(170, 170, 170);
+}
+
+.rating {
+    margin-left: 10px;
+    color: rgb(170, 170, 170);
+}

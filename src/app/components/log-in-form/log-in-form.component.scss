@@ -1,0 +1,64 @@
+$red: rgb(206, 0, 17);
+
+.form {
+    margin-top: 80px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    gap: 25px;
+}
+
+.header {
+    font-size: 2.2em;
+    font-weight: 500;
+}
+
+input {
+    height: 35px;
+    border: 0;
+    border-bottom: 2px solid rgb(173, 173, 173);
+}
+
+input::placeholder {
+    font-size: 1.1em;
+    font-family: "system-ui";
+}
+
+input:focus {
+    outline: none;
+}
+
+.login-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log-in {
+    padding: 0 30px;
+    cursor: pointer;
+    height: 42px;
+    border: 0;
+    font-size: 0.9em;
+    font-weight: 500;
+    border-radius: 4px; 
+    color: white;        
+    background-color: $red;
+}
+
+.log-in:hover {
+    background-color: rgb(179, 0, 15);
+}
+
+.form span {
+    color: $red;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form span:hover {
+    color: rgb(179, 0, 15);
+}

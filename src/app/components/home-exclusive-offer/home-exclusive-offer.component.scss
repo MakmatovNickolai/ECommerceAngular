@@ -1,0 +1,74 @@
+.container {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    height: 300px;
+    padding: 30px;
+    flex: 1;
+    object-fit: scale-down;
+}
+
+.offer-info {
+    height: 100%;
+    margin-left: 150px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-weight: 500;
+    color: green;
+    font-size: 1.5em;
+}
+
+.description {
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+.time-items {
+    display: flex;
+    gap: 20px
+}
+
+.time-item {
+    color: black;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-number {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+button  {
+    cursor: pointer;
+    background-color: green;
+    border: 0;
+    height: 50px;
+    color: white;
+    width: max-content;
+    padding: 0 40px;
+    border-radius: 3px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: rgb(0, 114, 0);
+}

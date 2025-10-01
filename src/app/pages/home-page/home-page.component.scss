@@ -1,0 +1,56 @@
+$red: rgb(206, 0, 17);
+
+:root {
+    overflow: auto;
+    padding-right: 15px;
+}
+
+hr {
+    margin: 0;
+    border: 1px solid #e2e2e2;
+}
+
+.main-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-banner hr {
+    margin: 0 30px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+app-category-list {
+    margin-top: 50px;
+}
+
+app-carousel-banner {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.heading {
+    margin-top: 100px;
+}
+
+.button-container {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-all-products {
+    cursor: pointer;
+    background-color: $red;
+    color: white;
+    border: 0;
+    height: 45px;
+    padding: 0 50px;
+    border-radius: 3px;
+}
+
+.view-all-products:hover {
+    background-color: rgb(179, 0, 15);
+}

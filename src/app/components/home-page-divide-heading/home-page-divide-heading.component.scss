@@ -1,0 +1,112 @@
+$red: rgb(206, 0, 17);
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.block {
+    border-radius: 5px;
+    height: 40px;
+    width: 20px;
+    background-color: $red;
+}
+
+.message {
+    margin-left: 20px;
+    color: $red;
+    font-weight: 500;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.details-info {
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.heading {
+    font-size: 2.2em;
+    font-weight: 500;
+}
+
+.time-left {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-separator {
+    margin-top: 10px;
+    font-size: 1.4em;
+    font-weight: 500;
+    color:rgb(206, 0, 17);
+}
+
+.time-item {
+    margin-left: 8px;
+    margin-right: 2px;
+}
+
+.time-text {
+    font-size: 0.8em;
+}
+
+.time-number {
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.buttons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.view-all {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    background-color: $red;
+    color: white;
+    border: 0;
+    width: max-content;
+    height: 45px;
+    padding: 0 40px;
+    border-radius: 3px;
+}
+
+.view-all:hover {
+    background-color: rgb(179, 0, 15);
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    border: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+button:hover {
+    background-color: rgb(218, 218, 218)
+}
+
+.left {
+    background-image: url("../../../assets/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right {
+    background-image: url("../../../assets/arrow-right-black.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}

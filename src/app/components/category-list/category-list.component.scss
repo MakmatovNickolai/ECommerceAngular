@@ -1,0 +1,31 @@
+.icon-right {
+    background-image: url("../../../assets/chevron-right.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    min-width: 260px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+    font-size: 1.1em;
+    list-style: none;
+}
+
+li:hover {
+    background-color: rgb(245, 245, 245);
+    color: black;
+}

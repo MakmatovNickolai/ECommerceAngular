@@ -1,0 +1,23 @@
+.container {
+    margin-top: 40px;
+    display: flex;
+    overflow: hidden;
+    gap: 25px;
+}
+
+.category {
+    cursor: pointer;
+    border: 1px solid rgb(202, 202, 202);
+    min-width: 295px;
+    height: 295px;
+    display: flex;
+    flex-direction: column;   
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-icon {
+    margin-top: 20px;
+    font-size: 3em;
+}

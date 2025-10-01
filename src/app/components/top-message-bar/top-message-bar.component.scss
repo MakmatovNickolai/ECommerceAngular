@@ -1,0 +1,33 @@
+.top-message {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    position: relative;
+}
+
+.shop-now {
+    margin: 0 15px;
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(240, 240, 240);
+}
+
+.shop-now:hover {
+    color: white;
+}
+
+.choose-language {
+    cursor: pointer;
+    margin-right: 130px;
+    padding-right: 25px;
+    position: absolute;
+    right: 0;
+    background-image: url("../../../assets/chevron-down.svg");
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: right;
+}

@@ -1,0 +1,41 @@
+<div class="name">
+    <div class="block"></div>
+    <span class="message">{{message}}</span>
+</div>
+<div class="details">
+    <div class="details-info">
+        <span class="heading">{{heading}}</span>
+        @if (showTime) {
+            <div class="time-left">
+                <div class="time-item">
+                    <div class="time-text">Days</div>
+                    <div class="time-number">{{timeLeft.days}}</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-item">
+                    <div class="time-text">Hours</div>
+                    <div class="time-number">{{timeLeft.hours}}</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-item">
+                    <div class="time-text">Minutes</div>
+                    <div class="time-number">{{timeLeft.minutes}}</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-item">
+                    <div class="time-text">Seconds</div>
+                    <div class="time-number">{{timeLeft.seconds}}</div>
+                </div>            
+            </div>                    
+        }
+        @if (showButtons) {
+            <div class="buttons">
+                <button class="left"></button>
+                <button class="right"></button>
+            </div>  
+        }
+        @if (showViewButton) {
+            <button class="view-all">View All</button>
+        }            
+    </div>
+</div>

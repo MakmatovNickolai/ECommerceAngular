@@ -1,0 +1,78 @@
+<div class="main main-banner">
+    <app-category-list></app-category-list>
+    <hr>
+    <app-carousel-banner></app-carousel-banner>
+    
+</div>
+
+<div class="main heading">
+    <app-home-page-divide-heading message="Today's" 
+        heading="Flash Sales"
+        [showButtons]="true"
+        [showTime]="true"></app-home-page-divide-heading>    
+</div>
+
+<div class="main-left">
+    <app-product-list></app-product-list>
+</div>
+
+<div class="button-container">
+    <button class="view-all-products">
+        View All Products
+    </button>
+</div>
+
+<div class="main">
+    <hr>   
+</div>
+
+<div class="main heading">
+    <app-home-page-divide-heading message="Categories"
+    heading="Browse By Category"
+    [showButtons]="true"></app-home-page-divide-heading>    
+</div>
+
+<div class="main">
+    <app-category-list-img></app-category-list-img>  
+</div>
+
+<div class="main top-spacing">
+    <hr>   
+</div>
+
+<div class="main heading">
+    <app-home-page-divide-heading message="This Month"
+    heading="Best Selling Products"
+    [showViewButton]="true"></app-home-page-divide-heading>
+    
+    <app-product-list></app-product-list>
+</div>
+
+<div class="main top-spacing">
+    <app-home-exclusive-offer></app-home-exclusive-offer>
+</div>
+
+<div class="main top-spacing">
+    <app-home-page-divide-heading message="Our Products"
+    heading="Explore Our Products"
+    [showButtons]="true"></app-home-page-divide-heading>
+
+    <app-product-list [isGrid]="true"></app-product-list>
+</div>
+
+<div class="button-container">
+    <button class="view-all-products">
+        View All Products
+    </button>
+</div>
+
+<div class="main top-spacing">
+    <app-home-page-divide-heading message="Featured"
+    heading="New Arrival"></app-home-page-divide-heading>
+
+    <app-new-products-grid></app-new-products-grid>
+</div>
+
+<div class="main top-spacing-large">
+    <app-benefits-list></app-benefits-list>
+</div>

@@ -6,13 +6,21 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { mockInterceptor } from './interceptors/mock-interceptor';
 
+const useBackendApi = true;
+
+const providers = [
+  provideRouter(routes),
+  provideClientHydration()  
+];
+
+if (useBackendApi) {
+  providers.push(provideHttpClient());
+} else {
+  providers.push(provideHttpClient(
+    withInterceptors([mockInterceptor])
+  ));
+}
 
 export const appConfig: ApplicationConfig = {
-  providers: [
-    provideRouter(routes),
-    provideClientHydration(),
-    provideHttpClient(
-      withInterceptors([mockInterceptor])
-    )
-  ]
+  providers: providers
 };

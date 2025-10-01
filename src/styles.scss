@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: "system-ui";
+    
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.main {
+    margin-left: 170px;
+    margin-right: 130px;
+}
+
+.main-left {
+    margin-left: 170px;
+}
+
+.top-spacing {
+    margin-top: 70px;
+}
+
+.top-spacing-large {
+    margin-top: 120px;
+}
